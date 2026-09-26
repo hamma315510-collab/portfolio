@@ -1,0 +1,415 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation */
+
+header {
+    width: 100%;
+    padding: 25px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #050505;
+    border-bottom: 1px solid #111;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #1683ff;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1683ff;
+}
+
+
+/* Accueil */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 8% 80px;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.small-title {
+    color: #1683ff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #1683ff;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.hero p:not(.small-title) {
+    color: #bdbdbd;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+    background-color: #1683ff;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0066d6;
+    transform: translateY(-2px);
+}
+
+
+/* Sections */
+
+.section {
+    min-height: 70vh;
+    padding: 120px 8% 80px;
+}
+
+.section h2 {
+    color: #1683ff;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.section p {
+    max-width: 700px;
+    color: #bdbdbd;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+/* Project */
+
+.project {
+    background-color: #0d0d0d;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+}
+
+.project h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.project p {
+    margin-bottom: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #111;
+    color: #777;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 160px 20px 80px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 100px 20px 60px;
+    }
+
+}
+.hero {
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1683ff;
+}
+section {
+    scroll-margin-top: 100px;
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image {
+    margin-right: 30px;
+}
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 300px;
+}
+.hero-image img {
+    box-shadow: 0 0 30px rgba(22, 131, 255, 0.35);
+}
+.hero h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#apropos {
+    border-top: 1px solid #111;
+}
+#apropos h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#apropos h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #1683ff;
+    margin-top: 10px;
+}
+#portfolio {
+    border-top: 1px solid #111;
+}
+
+#portfolio h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+#portfolio .project {
+    transition: 0.3s;
+}
+
+#portfolio .project:hover {
+    transform: translateY(-8px);
+    border-color: #1683ff;
+    box-shadow: 0 0 25px rgba(22, 131, 255, 0.15);
+}
+#contact {
+    border-top: 1px solid #111;
+}
+
+#contact p {
+    margin-bottom: 15px;
+}
+footer {
+    background-color: #000;
+    color: #777;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #1683ff;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact p {
+    background-color: #0d0d0d;
+    border: 1px solid #1b1b1b;
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+.button {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 15px rgba(22, 131, 255, 0.2);
+}
+.hero-image img {
+    transition: 0.4s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(22, 131, 255, 0.5);
+}
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #1683ff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-right: 0;
+        flex: none;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero p:not(.small-title) {
+        font-size: 16px;
+    }
+
+    .button {
+        margin-top: 10px;
+    }
+
+}
+.project img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+```css
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1683ff;
+    box-shadow: 0 0 30px rgba(22, 131, 255, 0.35);
+}
+```
+.contact-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #1683ff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0066d6;
+    transform: translateY(-2px);
+}
